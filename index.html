@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Төгсөгчдийн дурсамж | Өгөгдлийн Сангийн Оператор</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand">🎓 Төгсөгчдийн дурсамж</div>
+      <div class="nav-links">
+        <a href="#home">Нүүр</a>
+        <a href="#students">Төгсөгчид</a>
+        <a href="#gallery">Дурсамж</a>
+        <a href="#video">Видео</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container" id="home">
+      <p class="eyebrow">РАЖИВ ГАНДИЙН НЭРЭМЖИТ ҮЙЛДВЭРЛЭЛ УРЛАЛЫН ПОЛИТЕХНИК КОЛЛЕЖ</p>
+      <h1>Өгөгдлийн Сангийн Оператор</h1>
+      <p class="subtitle">Төгсөгчдийн дурсамжийн цахим монтаж</p>
+      <div class="teacher">Ангийн багш: <strong>Т. Эрдэнэцэцэг</strong></div>
+      <a class="btn" href="#students">30 төгсөгчөө үзэх ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <div class="container">
+        <p class="section-tag">БИДНИЙ ДУРСАМЖ</p>
+        <h2>Хамтдаа өнгөрүүлсэн он жилүүд</h2>
+        <p class="lead">Энэ бол бидний инээд, нөхөрлөл, хичээл зүтгэл, мөрөөдөл бүхнийг хадгалсан дурсамжийн цахим хуудас.</p>
+      </div>
+    </section>
+
+    <section class="section students-section" id="students">
+      <div class="container">
+        <p class="section-tag">ТӨГСӨГЧИД</p>
+        <h2>Манай 30 төгсөгч</h2>
+        <div class="student-grid" id="studentGrid"></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <p class="section-tag">МОНТАЖ</p>
+        <h2>Дурсамжийн зураг</h2>
+        <div class="slideshow">
+          <button class="slide-btn prev" aria-label="Өмнөх зураг">‹</button>
+          <div class="slide-frame">
+            <img id="slideImage" src="images/student01.jpg" alt="Төгсөгчдийн дурсамж">
+            <div class="slide-caption" id="slideCaption">Төгсөгчдийн дурсамж</div>
+          </div>
+          <button class="slide-btn next" aria-label="Дараагийн зураг">›</button>
+        </div>
+        <div class="dots" id="dots"></div>
+        <p class="hint">Зургийн хэсэгт student01.jpg–student30.jpg файлуудаа байрлуулна.</p>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="container">
+        <p class="section-tag">ТӨГСӨЛТИЙН БИЧЛЭГ</p>
+        <h2>Бидний видео дурсамж</h2>
+        <div class="video-card">
+          <video controls preload="metadata">
+            <source src="graduation.mp4" type="video/mp4">
+            Таны хөтөч видео тоглуулах боломжгүй байна.
+          </video>
+          <p>Видео файлаа <strong>videos/graduation.mp4</strong> нэрээр байрлуулна.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="message section">
+      <div class="container message-box">
+        <div class="quote-mark">“</div>
+        <p class="quote">Эрдэм мэдлэг, нөхөрлөл, дурсамжаа тээж, ирээдүй рүүгээ итгэл дүүрэн алхаж яваарай.</p>
+        <p class="signature">— Ангийн багш Т. Эрдэнэцэцэг</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Өгөгдлийн Сангийн Оператор</strong>
+        <p>Ражив Гандийн нэрэмжит Үйлдвэрлэл Урлалын Политехник Коллеж</p>
+      </div>
+      <div class="footer-year">© <span id="year"></span> Төгсөгчдийн дурсамж</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
